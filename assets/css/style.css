@@ -17,6 +17,7 @@
     --primary: #6366f1;
     --primary-dark: #4f46e5;
     --primary-light: #eef2ff;
+    --fav: rgb(226, 0, 94);
 
     /* Glass UI */
     --glass-bg: rgba(255, 255, 255, 0.55);
@@ -89,11 +90,22 @@ img {
     color: #fff !important;
 }
 
-.navbar {
+.main-header {
     backdrop-filter: blur(12px);
     background: var(--glass-bg) !important;
     border-bottom: 1px solid var(--glass-border);
     transition: var(--ts);
+}
+
+
+a {
+    text-decoration: none !important;
+}
+
+
+
+.nav-links a:hover {
+    color: var(--primary-dark);
 }
 
 /* --------------------------------------------------------
@@ -198,7 +210,7 @@ img {
 .subcard {
     backdrop-filter: blur(14px);
     background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--primary);
     padding: 14px 18px;
     border-radius: 14px;
     cursor: pointer;
@@ -298,3 +310,420 @@ footer {
         padding: 12px;
     }
 }
+
+
+footer small a {
+    text-decoration: none;
+    color: rgb(226, 0, 94);
+
+}
+
+footer small a:hover {
+    text-decoration: dotted;
+    color: rgb(199, 1, 83);
+}
+
+
+.subject-card-link {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------
+   EduHub — Index Page Animations & Hero Styling
+----------------------------------------------------------- */
+
+/* --------------------------------------------------------
+   GLOBAL INDEX STYLES
+----------------------------------------------------------- */
+
+header.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.55);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+header.sticky-header.scrolled {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* --------------------------------------------------------
+   HERO SECTION
+----------------------------------------------------------- */
+.hero {
+    position: relative;
+    padding: 6rem 1rem 4rem;
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    overflow: hidden;
+    border-radius: 20px;
+    color: white;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), transparent 70%);
+    transform: rotate(45deg);
+    animation: hero-animation 20s linear infinite;
+    z-index: 0;
+}
+
+@keyframes hero-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Buttons in hero */
+.hero .btn-primary,
+.hero .btn-secondary {
+    border-radius: 12px;
+    font-weight: 600;
+    padding: 12px 28px;
+    transition: all 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    background: #5146e3;
+    transform: translateY(-3px);
+}
+
+.hero .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* --------------------------------------------------------
+   SUBJECT CARDS GLASSMORPHISM & ANIMATION
+----------------------------------------------------------- */
+.subject-card {
+    backdrop-filter: blur(18px);
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    padding: 30px 20px;
+    transition: all 0.35s ease;
+    text-align: center;
+}
+
+.subject-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    border-color: #6366f1;
+}
+
+.subject-card i {
+    font-size: 2.5rem;
+    color: #6366f1;
+    transition: transform 0.35s ease;
+}
+
+.subject-card:hover i {
+    transform: rotate(12deg) scale(1.2);
+}
+
+.subject-card h4 {
+    margin-top: 15px;
+    font-weight: 700;
+    color: #1c1d21;
+    transition: color 0.35s ease;
+}
+
+/* --------------------------------------------------------
+   MOBILE MENU ANIMATION
+----------------------------------------------------------- */
+.navbar-collapse {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.navbar-collapse.collapsing {
+    transform: translateY(-15px);
+    opacity: 0;
+}
+
+.navbar-collapse.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* --------------------------------------------------------
+   FOOTER
+----------------------------------------------------------- */
+footer {
+    background: rgba(255, 255, 255, 0.55);
+    border-top: 1px solid rgba(255, 255, 255, 0.28);
+    padding: 2rem 1rem;
+    backdrop-filter: blur(12px);
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+
+footer small a {
+    color: #5146e3;
+    font-weight: 600;
+}
+
+footer small a:hover {
+    color: #3b36b3;
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------
+   RESPONSIVE
+----------------------------------------------------------- */
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 1rem 2rem;
+        border-radius: 15px;
+    }
+
+    .subject-card {
+        padding: 20px 15px;
+    }
+
+    .subject-card i {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+/* ----------------------
+   MOBILE MENU
+----------------------- */
+.mobile-menu {
+    display: none;
+    /* hidden by default */
+    flex-direction: column;
+    background: rgb(233, 233, 233);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(12px);
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    width: 200px;
+    border-radius: 12px;
+    padding: 10px 0;
+    box-shadow: var(--shadow);
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: 0.3s ease;
+}
+
+.mobile-menu.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-menu a {
+    padding: 10px 20px;
+    color: var(--text);
+    text-decoration: none;
+    transition: var(--ts);
+}
+
+.mobile-menu a:hover {
+    background: rgb(241, 241, 241);
+    color: var(--primary);
+    border-radius: 8px;
+}
+
+
+header>div.container.d-flex.justify-content-between.align-items-center>a {
+    color: var(--primary-dark);
+}
+
+
+
+
+/* ----------------------
+   HAMBURGER ICON ANIMATION
+----------------------- */
+.mobile-menu-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1100;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    background: var(--text);
+    height: 3px;
+    width: 28px;
+    border-radius: 2px;
+    transition: 0.4s ease;
+    position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+/* Active state → transforms into X */
+.mobile-menu-btn.active .hamburger {
+    background: transparent;
+}
+
+.mobile-menu-btn.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.mobile-menu-btn.active .hamburger::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+
+
+
+
+
+/* -------------------------
+   FILE LIST TABLE STYLING
+-------------------------- */
+
+#pdfList {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-bottom: 2rem;
+}
+
+/* Make table responsive */
+#pdfList table {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+/* Table header */
+#pdfList th {
+    font-weight: 600;
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.65);
+    text-align: left;
+    padding: 12px 15px;
+}
+
+/* Table body */
+#pdfList td {
+    vertical-align: middle;
+    padding: 12px 15px;
+}
+
+#pdfList tbody tr:hover {
+    background: rgba(99, 102, 241, 0.1);
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+#pdfList a.btn {
+    font-size: 0.85rem;
+    padding: 4px 8px;
+}
+
+/* Responsive scroll for small screens */
+@media (max-width: 768px) {
+    #pdfList table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+
+
+
+
+
+
+.subject-header {
+    background: rgba(255, 255, 255, 0.55);
+    /* glass effect */
+    /* backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); */
+}
+
+.subject-title {
+    font-size: 2rem;
+    color: var(--text);
+}
+
+.subject-description {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.subject-badges .badge {
+    padding: 0.35em 0.7em;
+    border-radius: 12px;
+}
+
+.subject-badges .bg-primary-light {
+    background-color: rgba(99, 102, 241, 0.15);
+    color: var(--primary);
+}
+
+.subject-badges .bg-success-light {
+    background-color: rgba(52, 211, 153, 0.15);
+    color: #34D199;
+}
+
+.subject-badges .bg-info-light {
+    background-color: rgba(96, 165, 250, 0.15);
+    color: #60A5FA;
+}
+

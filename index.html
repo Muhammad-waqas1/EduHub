@@ -1,160 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EduHub — BSADP5 Resources</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduHub</title>
 
-  <!-- Bootstrap for layout/utilities only (colors overridden) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- <link rel="stylesheet" href="./assets/css/index_extra.css" /> -->
+
+  <!-- Icons & Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-  <!-- site styles -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
-<body data-page="index">
+<body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg sticky-top py-3 bg-transparent">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">EduHub</a>
+  <!-- ================= HEADER ================= -->
+  <header class="main-header glass-header sticky-top py-2 shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <!-- Logo -->
+      <a href="/" class="logo d-flex align-items-center">
+        <i class="fa-solid fa-graduation-cap me-2 fs-3"></i>
+        <span class="fw-bold fs-4">EduHub</span>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="nav-links d-none d-md-flex gap-4">
+        <a href="/" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn d-md-none" aria-label="Menu">
+        <span class="hamburger"></span>
       </button>
 
-      <div id="nav" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto align-items-center">
-          <li class="nav-item me-2"><a class="nav-link" href="#subjects">Subjects</a></li>
-          <li class="nav-item me-2"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item">
-            <button id="theme-toggle" class="theme-toggle" aria-pressed="false" title="Toggle theme">
-              <i id="theme-icon" class="fa-solid fa-moon"></i>
-            </button>
-          </li>
-        </ul>
-      </div>
     </div>
-  </nav>
 
-  <!-- HERO -->
-  <header class="hero py-5">
-    <div class="container text-center">
-      <h1 class="display-5 fw-bold" data-aos="fade-up">EduHub — Your Semester Resource Vault</h1>
-      <p class="lead text-muted mt-2" data-aos="fade-up" data-aos-delay="100">
-        Organized notes, code, videos and extras for BSADP5 — quick to navigate, easy to maintain.
-      </p>
-      <div class="mt-4" data-aos="fade-up" data-aos-delay="200">
-        <a href="#subjects" class="btn btn-primary btn-lg me-2">Open Subjects</a>
-        <a href="about.html" class="btn btn-outline-secondary btn-lg">About EduHub</a>
-      </div>
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-menu d-md-none">
+      <a href="/">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </div>
   </header>
 
-  <!-- SUBJECTS GRID -->
-  <section id="subjects" class="py-5">
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero-section text-center p-5 py-4">
     <div class="container">
-      <h2 class="mb-4 text-center">Subjects</h2>
+      <h1 class="display-4 fw-bold mb-3 hero-title">Your Central Hub for Semester Resources</h1>
+      <p class="lead mb-4 hero-subtitle">Well-structured, organized, and dynamically updated notes for all subjects.</p>
+    </div>
+  </section>
 
-      <div class="row g-4">
-        <!-- Each card links to a separate subject page in /subjects/ -->
-        <div class="col-md-4" data-aos="zoom-in">
-          <a class="subject-link" href="subjects/graph-theory.html" aria-label="Open Graph Theory">
-            <div class="card h-100 border-0 shadow-sm subject-card">
-              <div class="card-body text-center">
-                <i class="fa-regular fa-sitemap fa-2x mb-3"></i>
-                <h5 class="card-title">Graph Theory</h5>
-                <p class="text-muted small">Notes, problems & lecture slides</p>
-              </div>
-            </div>
-          </a>
+  <!-- ================= FEATURE HIGHLIGHTS ================= -->
+  <section class="features-section p5 py-2">
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card p-4 glass shadow-sm text-center">
+            <i class="fa-solid fa-folder-tree fa-2x mb-3"></i>
+            <h4 class="fw-bold mb-2">Fully Organized Structure</h4>
+            <p class="text-muted mb-0">Every subject has its own directory with auto-loaded files.</p>
+          </div>
         </div>
 
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="50">
-          <a class="subject-link" href="subjects/numerical-computing.html" aria-label="Open Numerical Computing">
-            <div class="card h-100 border-0 shadow-sm subject-card">
-              <div class="card-body text-center">
-                <i class="fa-regular fa-calculator fa-2x mb-3"></i>
-                <h5 class="card-title">Numerical Computing</h5>
-                <p class="text-muted small">Algorithms & labs</p>
-              </div>
-            </div>
-          </a>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card p-4 glass shadow-sm text-center">
+            <i class="fa-solid fa-file-lines fa-2x mb-3"></i>
+            <h4 class="fw-bold mb-2">Dynamic File Loader</h4>
+            <p class="text-muted mb-0">PDF, PPTX, DOCX — all fetched automatically from respective folders.</p>
+          </div>
         </div>
 
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-          <a class="subject-link" href="subjects/computer-architecture.html" aria-label="Open Computer Architecture">
-            <div class="card h-100 border-0 shadow-sm subject-card">
-              <div class="card-body text-center">
-                <i class="fa-regular fa-microchip fa-2x mb-3"></i>
-                <h5 class="card-title">Computer Architecture</h5>
-                <p class="text-muted small">Designs & labs</p>
-              </div>
-            </div>
-          </a>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card p-4 glass shadow-sm text-center">
+            <i class="fa-solid fa-rocket fa-2x mb-3"></i>
+            <h4 class="fw-bold mb-2">Quick Access</h4>
+            <p class="text-muted mb-0">Fast navigation to any subject or topic in just one click.</p>
+          </div>
         </div>
 
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
-          <a class="subject-link" href="subjects/web-systems-and-technologies.html"
-            aria-label="Open Web Systems & Technologies">
-            <div class="card h-100 border-0 shadow-sm subject-card">
-              <div class="card-body text-center">
-                <i class="fa-regular fa-code fa-2x mb-3"></i>
-                <h5 class="card-title">Web Systems & Technologies</h5>
-                <p class="text-muted small">Web notes, demos & code</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-          <a class="subject-link" href="subjects/information-security.html" aria-label="Open Information Security">
-            <div class="card h-100 border-0 shadow-sm subject-card">
-              <div class="card-body text-center">
-                <i class="fa-regular fa-shield-halved fa-2x mb-3"></i>
-                <h5 class="card-title">Information Security</h5>
-                <p class="text-muted small">Security labs & notes</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="250">
-          <a class="subject-link" href="subjects/data-science-tools.html"
-            aria-label="Open Tools & Techniques in Data Science">
-            <div class="card h-100 border-0 shadow-sm subject-card">
-              <div class="card-body text-center">
-                <i class="fa-regular fa-chart-simple fa-2x mb-3"></i>
-                <h5 class="card-title">Tools & Techniques in Data Science</h5>
-                <p class="text-muted small">Notebooks, datasets & code</p>
-              </div>
-            </div>
-          </a>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="py-4 bg-white border-top">
-    <div class="container text-center">
-      <small class="text-muted">© 2025 EduHub • Built for static hosting (GitHub Pages).</small>
+  <!-- ================= SUBJECT GRID ================= -->
+  <section id="subjects" class="container py-5">
+    <h2 class="text-center fw-bold mb-4">Subjects</h2>
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-4 col-sm-6">
+        <a href="./subjects/graph-theory.html" class="subject-card-link">
+          <div class="card subject-card p-4 text-center">
+            <i class="fa-solid fa-diagram-project fa-2x"></i>
+            <h4 class="mt-3">Graph Theory</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <a href="./subjects/numerical-computing.html" class="subject-card-link">
+          <div class="card subject-card p-4 text-center">
+            <i class="fa-solid fa-calculator fa-2x"></i>
+            <h4 class="mt-3">Numerical Computing</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <a href="./subjects/information-security.html" class="subject-card-link">
+          <div class="card subject-card p-4 text-center">
+            <i class="fa-solid fa-shield-halved fa-2x"></i>
+            <h4 class="mt-3">Information Security</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <a href="./subjects/computer-architecture.html" class="subject-card-link">
+          <div class="card subject-card p-4 text-center">
+            <i class="fa-solid fa-microchip fa-2x"></i>
+            <h4 class="mt-3">Computer Architecture</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <a href="./subjects/web-systems-and-technologies.html" class="subject-card-link">
+          <div class="card subject-card p-4 text-center">
+            <i class="fa-solid fa-globe fa-2x"></i>
+            <h4 class="mt-3">Web Systems & Technologies</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <a href="./subjects/data-science-tools.html" class="subject-card-link">
+          <div class="card subject-card p-4 text-center">
+            <i class="fa-solid fa-chart-line fa-2x"></i>
+            <h4 class="mt-3">Data Science Tools</h4>
+          </div>
+        </a>
+      </div>
+
     </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="text-center py-4 mt-3">
+    <small>© 2025 EduHub | Built by <a href="https://github.com//Muhammad-waqas1" target="_blank">Waqas</a></small>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-  <!-- site scripts -->
+  <!-- JS -->
   <script src="assets/js/app.js" defer></script>
-  <script>
-    AOS.init({ once: true, duration: 700 });
-  </script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 
 </html>

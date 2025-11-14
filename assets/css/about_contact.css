@@ -1,0 +1,181 @@
+/* --- About + Contact Extra Styling & Animations --- */
+
+/* Root Variables for Theme */
+:root {
+    --accent: #4a6cff;
+    --accent-hover: #3b55cc;
+    --bg-light: #f9faff;
+    --bg-dark: #121212;
+    --fg-light: #111;
+    --fg-dark: #eee;
+    --card-bg-light: #fff;
+    --card-bg-dark: rgba(30, 30, 30, 0.85);
+    --transition: 0.35s ease;
+}
+
+/* General Containers */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Glassmorphism Card */
+.card.glass {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: all var(--transition);
+}
+
+[data-theme="dark"] .card.glass {
+    background: rgba(30, 30, 30, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--fg-dark);
+}
+
+/* Hero Animations */
+.about-hero-inner {
+    text-align: center;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.about-hero-inner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--bg-dark);
+}
+
+.about-hero-inner p {
+    font-size: 1.2rem;
+    color: var(--fg-light);
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease 0.3s forwards;
+}
+
+/* Contact Grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.contact-page h1,
+.contact-page p {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.7s ease forwards;
+}
+
+.contact-page h1 {
+    animation-delay: 0.1s;
+}
+
+.contact-page p {
+    animation-delay: 0.3s;
+}
+
+/* Form Animations */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.85);
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 10px rgba(74, 108, 255, 0.35);
+    outline: none;
+}
+
+.contact-form button {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(74, 108, 255, 0.4);
+}
+
+/* List Animations */
+.about-list li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInLeft 0.6s forwards;
+}
+
+/* .about-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+} */
+
+.about-list li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.about-list li:nth-child(2) {
+    animation-delay: 0.35s;
+}
+
+.about-list li:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.about-list li:nth-child(4) {
+    animation-delay: 0.65s;
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
