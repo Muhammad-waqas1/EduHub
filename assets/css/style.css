@@ -1,0 +1,300 @@
+/* --------------------------------------------------------
+   EduHub — Theme, Layout & Components
+   Author: Waqas
+----------------------------------------------------------- */
+
+/* --------------------------------------------------------
+   GLOBAL THEME VARIABLES
+----------------------------------------------------------- */
+
+:root {
+    /* Light Theme */
+    --bg: #f8f9fb;
+    --text: #1c1d21;
+    --muted: #6c6f76;
+
+    /* Primary Theme Color (Modern Indigo) */
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --primary-light: #eef2ff;
+
+    /* Glass UI */
+    --glass-bg: rgba(255, 255, 255, 0.55);
+    --glass-border: rgba(255, 255, 255, 0.28);
+    --shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    /* Transitions */
+    --ts: 0.25s ease;
+}
+
+[data-theme="dark"] {
+    --bg: #0f1115;
+    --text: #e9e9ea;
+    --muted: #8a8f98;
+
+    --glass-bg: rgba(20, 20, 25, 0.4);
+    --glass-border: rgba(255, 255, 255, 0.06);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+    --primary-light: rgba(99, 102, 241, 0.16);
+}
+
+/* --------------------------------------------------------
+   BASE
+----------------------------------------------------------- */
+
+html,
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", system-ui, sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    transition: var(--ts);
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+    transition: var(--ts);
+    border-radius: 10px !important;
+    font-weight: 500;
+}
+
+/* --------------------------------------------------------
+   BOOTSTRAP OVERRIDES
+----------------------------------------------------------- */
+
+.btn-primary {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark) !important;
+}
+
+.btn-outline-secondary {
+    border-color: var(--muted) !important;
+    color: var(--muted) !important;
+}
+
+.btn-outline-secondary:hover {
+    background: var(--muted) !important;
+    color: #fff !important;
+}
+
+.navbar {
+    backdrop-filter: blur(12px);
+    background: var(--glass-bg) !important;
+    border-bottom: 1px solid var(--glass-border);
+    transition: var(--ts);
+}
+
+/* --------------------------------------------------------
+   THEME TOGGLE
+----------------------------------------------------------- */
+
+.theme-toggle {
+    background: var(--primary-light);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: var(--ts);
+}
+
+.theme-toggle:hover {
+    background: var(--primary);
+    color: white;
+}
+
+#theme-icon {
+    font-size: 1.1rem;
+}
+
+/* --------------------------------------------------------
+   HERO
+----------------------------------------------------------- */
+
+.hero {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.hero h1 {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.hero .lead {
+    color: var(--muted);
+}
+
+/* --------------------------------------------------------
+   SUBJECT CARDS
+----------------------------------------------------------- */
+
+.subject-card {
+    backdrop-filter: blur(14px);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: var(--ts);
+}
+
+.subject-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary);
+}
+
+/* Icon inside card */
+.subject-card i {
+    color: var(--primary);
+}
+
+/* Card title */
+.subject-card h5 {
+    font-weight: 600;
+    color: var(--text);
+}
+
+/* --------------------------------------------------------
+   SUBJECT PAGE STYLES
+----------------------------------------------------------- */
+
+.subject-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.subject-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.subject-badge {
+    display: inline-block;
+    padding: 8px 14px;
+    background: var(--primary-light);
+    border-radius: 10px;
+    color: var(--primary-dark);
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+/* -----------------------
+   SUBCARDS (Topics inside subject)
+-------------------------- */
+.subcard {
+    backdrop-filter: blur(14px);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: 14px 18px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: var(--ts);
+}
+
+.subcard:hover {
+    background: var(--primary-light);
+    border-color: var(--primary);
+}
+
+.subcard.active {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary-dark);
+}
+
+/* -----------------------
+   SEARCH BOX
+-------------------------- */
+.search-input {
+    border-radius: 12px;
+    border: 1px solid var(--muted);
+    padding: 10px 14px;
+    background: var(--glass-bg);
+    color: var(--text);
+    transition: var(--ts);
+}
+
+.search-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+/* -----------------------
+   FILE LIST
+-------------------------- */
+.file-list .list-group-item {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+    margin-bottom: 10px;
+    border-radius: 12px;
+    transition: var(--ts);
+    cursor: pointer;
+}
+
+.file-list .list-group-item:hover {
+    border-color: var(--primary);
+    transform: translateX(4px);
+    background: var(--primary-light);
+}
+
+.file-list i {
+    color: var(--primary-dark);
+    margin-right: 8px;
+}
+
+/* --------------------------------------------------------
+   BACK BUTTON (Subject Page)
+----------------------------------------------------------- */
+
+.back-btn {
+    background: var(--primary);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    transition: var(--ts);
+}
+
+.back-btn:hover {
+    background: var(--primary-dark);
+}
+
+/* --------------------------------------------------------
+   FOOTER
+----------------------------------------------------------- */
+
+footer {
+    background: var(--glass-bg);
+    border-top: 1px solid var(--glass-border);
+}
+
+/* --------------------------------------------------------
+   MEDIA QUERIES
+----------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .subject-title {
+        font-size: 1.7rem;
+    }
+
+    .subcard {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
