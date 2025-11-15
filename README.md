@@ -1,6 +1,6 @@
 # EduHub
 
-EduHub is a lightweight and user-friendly platform designed to organize and provide educational resources for students, specifically for 4th semester ADP/BCS courses. This project is built using **HTML, CSS (Glassmorphism + modern UI), Bootstrap**, and **JavaScript** to dynamically load resources and make the interface responsive and interactive.
+EduHub is a lightweight and user-friendly platform designed to organize and provide educational resources for students, specifically for 5th semester BSCS courses. This project is built using **HTML, CSS (Glassmorphism + modern UI), Bootstrap**, and **JavaScript** to dynamically load resources and make the interface responsive and interactive.
 
 ## Live Demo
 Click the link = [Visit](https://muhammad-waqas1.github.io/EduHub/)

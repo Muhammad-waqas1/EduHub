@@ -1,8 +1,48 @@
 {
   "notes": [
-    
+    {
+      "name": "Math_Resources_Trigonometric_Formulas_copy.pdf",
+      "url": "Math_Resources_Trigonometric_Formulas_copy.pdf",
+      "type": "pdf",
+      "size": "0.22MB",
+      "date": "09-10-2025"
+    },
+    {
+      "name": "numerical computing 01.pdf",
+      "url": "numerical computing 01.pdf",
+      "type": "pdf",
+      "size": "5.67MB",
+      "date": "01-11-2025"
+    },
+    {
+      "name": "Numerical Computing, notes.pdf",
+      "url": "Numerical Computing, notes.pdf",
+      "type": "pdf",
+      "size": "6.92MB",
+      "date": "28-10-2025"
+    },
+    {
+      "name": "Numerical_Methods_MCQs.docx",
+      "url": "Numerical_Methods_MCQs.docx",
+      "type": "docx",
+      "size": "0.04MB",
+      "date": "15-11-2025"
+    }
   ],
   "extras": [
-    
+    {
+      "name": "1 img.jpg",
+      "url": "1 img.jpg",
+      "type": "jpg",
+      "size": "0.1MB",
+      "date": "15-11-2025"
+    },
+    {
+      "name": "2 img.jpg",
+      "url": "2 img.jpg",
+      "type": "jpg",
+      "size": "0.1MB",
+      "date": "15-11-2025"
+    }
   ]
 }
