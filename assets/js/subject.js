@@ -307,7 +307,7 @@ document.querySelectorAll('.subcard').forEach(card => {
 
         // Load files according to selected type
         const type = this.dataset.type;
-        const subjectFolder = window.location.pathname.split('/')[2].slice(0, -5); // extract folder name dynamically
+        const subjectFolder = window.location.pathname.split('/')[3].slice(0, -5); // extract folder name dynamically
         // console.log(subjectFolder) 2 work in local 3 when on github.io
         loadFiles(subjectFolder, type);
     });
