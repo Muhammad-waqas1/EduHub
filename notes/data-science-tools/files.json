@@ -1,8 +1,82 @@
 {
   "notes": [
-    
+    {
+      "name": "Data Science Lecture 1.pptx",
+      "url": "Data Science Lecture 1.pptx",
+      "type": "pptx",
+      "size": "3.67MB",
+      "date": "10-10-2025"
+    },
+    {
+      "name": "Lecture07 - DS processes and EDA.pptx",
+      "url": "Lecture07 - DS processes and EDA.pptx",
+      "type": "pptx",
+      "size": "1.28MB",
+      "date": "31-10-2025"
+    },
+    {
+      "name": "Lecture_02_Programming_Fundamentals.ipynb",
+      "url": "Lecture_02_Programming_Fundamentals.ipynb",
+      "type": "ipynb",
+      "size": "0.02MB",
+      "date": "28-10-2025"
+    },
+    {
+      "name": "Lecture_03_Operators_in_Python_(Notebook).ipynb",
+      "url": "Lecture_03_Operators_in_Python_(Notebook).ipynb",
+      "type": "ipynb",
+      "size": "0.07MB",
+      "date": "11-11-2025"
+    },
+    {
+      "name": "Lecture_04_If_statements_&_Loops.ipynb",
+      "url": "Lecture_04_If_statements_&_Loops.ipynb",
+      "type": "ipynb",
+      "size": "0.11MB",
+      "date": "14-10-2025"
+    },
+    {
+      "name": "Lecture_05_String_Manipulation_(Notebook).ipynb",
+      "url": "Lecture_05_String_Manipulation_(Notebook).ipynb",
+      "type": "ipynb",
+      "size": "0.07MB",
+      "date": "11-11-2025"
+    },
+    {
+      "name": "Lecture_06_While_Loop_&_Functions_in_Python.ipynb",
+      "url": "Lecture_06_While_Loop_&_Functions_in_Python.ipynb",
+      "type": "ipynb",
+      "size": "0.1MB",
+      "date": "11-11-2025"
+    },
+    {
+      "name": "Lecture_08 - Data Science Processes part 2.pptx",
+      "url": "Lecture_08 - Data Science Processes part 2.pptx",
+      "type": "pptx",
+      "size": "1.25MB",
+      "date": "31-10-2025"
+    },
+    {
+      "name": "Lecture_09_EDA 1.ipynb",
+      "url": "Lecture_09_EDA 1.ipynb",
+      "type": "ipynb",
+      "size": "0.1MB",
+      "date": "10-11-2025"
+    },
+    {
+      "name": "Lecture_09_Introduction_to_API.ipynb",
+      "url": "Lecture_09_Introduction_to_API.ipynb",
+      "type": "ipynb",
+      "size": "0.02MB",
+      "date": "10-10-2025"
+    },
+    {
+      "name": "Lecture_10_EDA_2.ipynb",
+      "url": "Lecture_10_EDA_2.ipynb",
+      "type": "ipynb",
+      "size": "0.24MB",
+      "date": "10-11-2025"
+    }
   ],
-  "extras": [
-    
-  ]
+  "extras": []
 }

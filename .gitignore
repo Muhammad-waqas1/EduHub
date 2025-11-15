@@ -65,3 +65,5 @@ coverage.xml
 notes/computer-architecture/main.py
 notes/web-systems-and-technologies/main.py
 *.json
+
+main.py
