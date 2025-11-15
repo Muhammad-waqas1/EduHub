@@ -49,11 +49,33 @@
     </header>
 
     <!-- Subject Header -->
-    <section class="container subject-header px-5 mt-4 mb-0">
-        <h1 class="subject-title">Web Systems & Technologies</h1>
-        <span class="subject-badge">Web Systems & Technologies • Notes</span>
-    </section>
+    <section class="container subject-header px-4 py-4  mb-4">
+        <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3">
 
+            <!-- Left: Title + Description -->
+            <div class="flex-grow-1">
+                <h1 class="subject-title fw-bold mb-2">Web Systems & Technologies</h1>
+                <p class="subject-description text-muted mb-2">
+                    Understand how the modern web works end-to-end. Learn about HTTP, APIs, hosting, frontend/backends,
+                    and full-stack application structure. Includes practical insights into performance, scalability, and
+                    core web standards.
+                </p>
+                <div class="subject-badges d-flex flex-wrap gap-2">
+                    <span class="badge bg-primary-light text-primary fw-semibold">5th Semester</span>
+                    <span class="badge bg-success-light text-success fw-semibold">Web Development</span>
+                    <span class="badge bg-info-light text-info fw-semibold">ADP / BCS</span>
+                </div>
+            </div>
+
+            <!-- Right: Quick Stats -->
+            <div class="text-md-end mt-3 mt-md-0">
+                <p class="mb-1"><strong>Total Files:</strong> <span id="totalFiles">0</span></p>
+                <p class="mb-0"><strong>Last Updated:</strong> <span id="lastUpdated">-</span></p>
+            </div>
+
+        </div>
+    </section>
 
     <div class="container mb-4">
         <button class="back-btn"><i class="fa fa-arrow-left"></i> Back</button>

@@ -179,3 +179,149 @@
 
 
 
+
+
+/* CONTACT PAGE GRID */
+.social-connect-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* CONTACT CARDS */
+.contact-card {
+    padding: 2rem;
+    border-radius: 18px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(14px);
+    transition: all 0.25s ease;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.contact-card .icon {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.contact-card p {
+    color: #4b4b4b;
+}
+
+/* Hover Animation */
+.hover-up {
+    transform: translateY(0);
+}
+
+.hover-up:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+/* Highlight Collaboration Card */
+.highlight-card {
+    background: linear-gradient(135deg, #cd46e5cc, #5449e34f);
+    border: 1px solid rgba(140, 150, 255, 0.4);
+}
+
+.highlight-card:hover {
+    box-shadow: 0 10px 40px rgba(90, 110, 255, 0.35);
+}
+
+
+
+/* Scroll Reveal Base */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: revealAnim 0.7s ease forwards;
+}
+
+@keyframes revealAnim {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* 3D Tilt */
+.tilt {
+    transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+}
+
+.tilt:hover {
+    transform: perspective(900px) rotateX(6deg) rotateY(-6deg);
+}
+
+
+
+.contact-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card::after {
+    content: "";
+    position: absolute;
+    top: -150%;
+    left: -150%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(
+        115deg,
+        transparent 0%,
+        rgba(213, 230, 255, 0.384) 50%,
+        transparent 100%
+    );
+    transform: rotate(30deg);
+    transition: opacity .15s;
+    opacity: 0;
+}
+
+.contact-card:hover::after {
+    opacity: 1;
+    animation: shineAnim 0.8s forwards;
+}
+
+@keyframes shineAnim {
+    from { transform: translateX(-100%) rotate(30deg); }
+    to { transform: translateX(100%) rotate(30deg); }
+}
+
+
+.highlight-card {
+    background: linear-gradient(135deg, #ebc8ff55, #b7d8ff33);
+    border: 1px solid rgba(130, 140, 255, 0.5);
+}
+
+.highlight-card:hover {
+    box-shadow: 0 12px 45px rgba(90, 120, 255, 0.35);
+}
+
+
+
+.contact-card .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 3px 8px rgba(0,0,0,0.25));
+}
+
+
+@media (max-width: 576px) {
+    .contact-card {
+        padding: 1.6rem;
+    }
+    .contact-card .icon {
+        font-size: 2.4rem;
+    }
+}
