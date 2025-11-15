@@ -365,7 +365,7 @@ async function loadFiles(subjectFolder, type = 'notes') {
                                 <td>${f.size}</td>
                                 <td>${new Date(f.date).toLocaleDateString()}</td>
                                 <td>
-                                    <a href="../notes/${subjectFolder}/${f.url}" target="_blank" class="btn btn-sm btn-primary">
+                                    <a href="../${f.url}" target="_blank" class="btn btn-sm btn-primary">
                                         View
                                     </a>
                                 </td>
