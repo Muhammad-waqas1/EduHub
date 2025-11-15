@@ -491,6 +491,7 @@ footer small a {
 footer small a:hover {
     color: #3b36b3;
     text-decoration: underline;
+    font-size: medium;
 }
 
 /* --------------------------------------------------------
