@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.env
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+*.log
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Node / Frontend (if using npm, even for HTML/CSS/JS projects)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# JSON data files (optional: ignore if you don't want files.json in Git)
+# files.json
+
+# PyCharm
+.idea/
+
+# Temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Coverage / Test outputs
+htmlcov/
+.coverage
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Logs
+*.log
+
+# Compiled files
+*.pyc
+*.pyo
+*.pyd
+
+
+# Manually added
+
+notes/computer-architecture/main.py
+
+*.json

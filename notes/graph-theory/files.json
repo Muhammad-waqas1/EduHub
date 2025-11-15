@@ -2,26 +2,20 @@
   "notes": [
     {
       "name": "Dover Books on Mathematics.pdf",
-      "url": "notes/graph-theory/(Dover Books on Mathematics) Gary Chartrand, Ping Zhang - A First Course in Graph Theory-Dover Publications (2012).pdf",
+      "url": "(Dover Books on Mathematics) Gary Chartrand, Ping Zhang - A First Course in Graph Theory-Dover Publications (2012).pdf",
       "type": "pdf",
-      "size": "2MB",
-      "date": "2025-10-01"
+      "size": "10.8 MB",
+      "date": "14-11-2025"
     },
     {
-      "name": "Lecture 2",
-      "url": "lecture2.pdf",
+      "name": "Graph theory lectures all-1",
+      "url": "Graph theory lectures all-1.pdf",
       "type": "pdf",
-      "size": "1.5MB",
-      "date": "2025-10-02"
+      "size": "14.9 MB",
+      "date": "15-11-2025"
     }
   ],
   "extras": [
-    {
-      "name": "Problem Sets",
-      "url": "problems.zip",
-      "type": "zip",
-      "size": "4MB",
-      "date": "2025-10-03"
-    }
+    
   ]
 }

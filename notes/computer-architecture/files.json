@@ -1,27 +1,139 @@
 {
   "notes": [
     {
-      "name": "Dover Books on Mathematics.pdf",
-      "url": "notes/graph-theory/(Dover Books on Mathematics) Gary Chartrand, Ping Zhang - A First Course in Graph Theory-Dover Publications (2012).pdf",
+      "name": "1. Overview Of Computer System.pdf",
+      "url": "1. Overview Of Computer System.pdf",
       "type": "pdf",
-      "size": "2MB",
-      "date": "2025-10-01"
+      "size": "2.45MB",
+      "date": "13-11-2025"
     },
     {
-      "name": "Lecture 2",
-      "url": "lecture2.pdf",
+      "name": "2. Bits, Programs & Instruction Flow.pdf",
+      "url": "2. Bits, Programs & Instruction Flow.pdf",
       "type": "pdf",
-      "size": "1.5MB",
-      "date": "2025-10-02"
+      "size": "1.31MB",
+      "date": "16-10-2025"
+    },
+    {
+      "name": "3. Processor & Memory Managemnt.pdf",
+      "url": "3. Processor & Memory Managemnt.pdf",
+      "type": "pdf",
+      "size": "1.13MB",
+      "date": "13-11-2025"
+    },
+    {
+      "name": "4p1. Hardware, Software & Userinterface.pdf",
+      "url": "4p1. Hardware, Software & Userinterface.pdf",
+      "type": "pdf",
+      "size": "0.77MB",
+      "date": "13-11-2025"
+    },
+    {
+      "name": "4p2. Input & Output Devices.pdf",
+      "url": "4p2. Input & Output Devices.pdf",
+      "type": "pdf",
+      "size": "0.72MB",
+      "date": "15-11-2025"
+    },
+    {
+      "name": "5. OS & Hardware Management.pdf",
+      "url": "5. OS & Hardware Management.pdf",
+      "type": "pdf",
+      "size": "0.87MB",
+      "date": "15-11-2025"
+    },
+    {
+      "name": "6- Networks and System Communication - Basic Protocols.pdf",
+      "url": "6- Networks and System Communication - Basic Protocols.pdf",
+      "type": "pdf",
+      "size": "0.73MB",
+      "date": "13-11-2025"
+    },
+    {
+      "name": "7 .  Number System Conversion.pdf",
+      "url": "7 .  Number System Conversion.pdf",
+      "type": "pdf",
+      "size": "0.56MB",
+      "date": "15-11-2025"
+    },
+    {
+      "name": "10. How the operating system manages computer hardware.pdf",
+      "url": "10. How the operating system manages computer hardware.pdf",
+      "type": "pdf",
+      "size": "0.23MB",
+      "date": "13-11-2025"
+    },
+    {
+      "name": "14. Language Processing System in Compiler Design.pdf",
+      "url": "14. Language Processing System in Compiler Design.pdf",
+      "type": "pdf",
+      "size": "0.14MB",
+      "date": "13-11-2025"
+    },
+    {
+      "name": "All MCQS -CSA.docx",
+      "url": "All MCQS -CSA.docx",
+      "type": "docx",
+      "size": "0.05MB",
+      "date": "14-11-2025"
+    },
+    {
+      "name": "Group 2 Information_of_Bits.docx",
+      "url": "Group 2 Information_of_Bits.docx",
+      "type": "docx",
+      "size": "0.03MB",
+      "date": "07-11-2025"
+    },
+    {
+      "name": "Group 3 Buses.docx",
+      "url": "Group 3 Buses.docx",
+      "type": "docx",
+      "size": "0.04MB",
+      "date": "14-11-2025"
+    },
+    {
+      "name": "Group 5 Program.docx",
+      "url": "Group 5 Program.docx",
+      "type": "docx",
+      "size": "0.03MB",
+      "date": "14-11-2025"
+    },
+    {
+      "name": "Group 7 Instruction Cycle.doc",
+      "url": "Group 7 Instruction Cycle.doc",
+      "type": "doc",
+      "size": "0.15MB",
+      "date": "14-11-2025"
     }
   ],
   "extras": [
     {
-      "name": "Problem Sets",
-      "url": "problems.zip",
-      "type": "zip",
-      "size": "4MB",
-      "date": "2025-10-03"
+      "name": "Beaware - Deepfake AI.mp4",
+      "url": "Beaware - Deepfake AI.mp4",
+      "type": "mp4",
+      "size": "3.93MB",
+      "date": "23-10-2025"
+    },
+    {
+      "name": "Code Execution Process.mp4",
+      "url": "Code Execution Process.mp4",
+      "type": "mp4",
+      "size": "15.96MB",
+      "date": "31-10-2025"
+    },
+    {
+      "name": "Evolution of Computer.mp4",
+      "url": "Evolution of Computer.mp4",
+      "type": "mp4",
+      "size": "9.68MB",
+      "date": "16-10-2025"
+    },
+    {
+      "name": "Grouping of  Class.jpg",
+      "url": "Grouping of  Class.jpg",
+      "type": "jpg",
+      "size": "0.23MB",
+      "date": "06-11-2025"
     }
   ]
 }

@@ -326,15 +326,23 @@ async function loadFiles(subjectFolder, type = 'notes') {
         const allFiles = [...(filesData.notes || []), ...(filesData.extras || [])];
         totalFilesSpan && (totalFilesSpan.textContent = allFiles.length);
 
-        // Last updated
-        if (allFiles.length) {
-            const latestDate = allFiles.reduce((latest, file) => {
-                return new Date(file.date) > new Date(latest) ? file.date : latest;
-            }, allFiles[0].date);
-            lastUpdatedSpan && (lastUpdatedSpan.textContent = new Date(latestDate).toLocaleDateString());
+
+        // Last updated based on files.json modification time
+        const jsonPath = `../notes/${subjectFolder}/files.json`;
+        const response = await fetch(jsonPath, { method: 'HEAD' }); // Fetch headers only
+        const lastModified = response.headers.get('last-modified'); // Get Last-Modified header
+
+        if (lastModified) {
+            const date = new Date(lastModified);
+            // Format as DD-MM-YYYY
+            const formatted = String(date.getDate()).padStart(2, '0') + '-' +
+                String(date.getMonth() + 1).padStart(2, '0') + '-' +
+                date.getFullYear();
+            lastUpdatedSpan.textContent = formatted;
         } else {
-            lastUpdatedSpan && (lastUpdatedSpan.textContent = '-');
+            lastUpdatedSpan.textContent = '-';
         }
+
 
         // Filter files by type
         const filtered = type === 'notes' ? filesData.notes : filesData.extras;
@@ -363,9 +371,9 @@ async function loadFiles(subjectFolder, type = 'notes') {
                                 <td>${f.name}</td>
                                 <td>${f.type.toUpperCase()}</td>
                                 <td>${f.size}</td>
-                                <td>${new Date(f.date).toLocaleDateString()}</td>
+                                <td>${f.date}</td>
                                 <td>
-                                    <a href="../${f.url}" target="_blank" class="btn btn-sm btn-primary">
+                                    <a href="../notes/${subjectFolder}/${f.url}" target="_blank" class="btn btn-sm btn-primary">
                                         View
                                     </a>
                                 </td>
