@@ -747,3 +747,13 @@ body>section.container.subject-header.px-4.py-4.mb-4>div>div.text-md-end.mt-3.mt
         width: 100% !important;
     }
 }
+
+
+
+body > header > div.container.d-flex.justify-content-between.align-items-center > nav{
+    font-weight: bold;
+}
+
+body > header > div.container.d-flex.justify-content-between.align-items-center > nav .active{
+    color: var(--primary-dark);
+}

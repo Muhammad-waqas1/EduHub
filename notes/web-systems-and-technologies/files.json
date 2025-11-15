@@ -1,8 +1,69 @@
 {
   "notes": [
-    
+    {
+      "name": "Article - Improving Web Security through Machine .pdf",
+      "url": "Article - Improving Web Security through Machine .pdf",
+      "type": "pdf",
+      "size": "0.53MB",
+      "date": "10-11-2025"
+    },
+    {
+      "name": "Group  2 Article .pdf",
+      "url": "Group  2 Article .pdf",
+      "type": "pdf",
+      "size": "0.51MB",
+      "date": "23-10-2025"
+    },
+    {
+      "name": "Group 1 Research Paper.pdf",
+      "url": "Group 1 Research Paper.pdf",
+      "type": "pdf",
+      "size": "1.52MB",
+      "date": "15-11-2025"
+    },
+    {
+      "name": "Group 4 ppt Slides.pdf",
+      "url": "Group 4 ppt Slides.pdf",
+      "type": "pdf",
+      "size": "1.28MB",
+      "date": "03-11-2025"
+    },
+    {
+      "name": "Group 5 Article.pdf",
+      "url": "Group 5 Article.pdf",
+      "type": "pdf",
+      "size": "0.22MB",
+      "date": "10-11-2025"
+    },
+    {
+      "name": "Group 5 Presentation.pdf",
+      "url": "Group 5 Presentation.pdf",
+      "type": "pdf",
+      "size": "50.5MB",
+      "date": "15-11-2025"
+    },
+    {
+      "name": "groups_pattern_pdf.pdf",
+      "url": "groups_pattern_pdf.pdf",
+      "type": "pdf",
+      "size": "4KB",
+      "date": "26-10-2025"
+    },
+    {
+      "name": "lecture no 1 notes _The Client-....docx",
+      "url": "lecture no 1 notes _The Client-....docx",
+      "type": "docx",
+      "size": "0.12MB",
+      "date": "16-10-2025"
+    }
   ],
   "extras": [
-    
+    {
+      "name": "Syllabus.txt",
+      "url": "Syllabus.txt",
+      "type": "txt",
+      "size": "1KB",
+      "date": "16-10-2025"
+    }
   ]
 }

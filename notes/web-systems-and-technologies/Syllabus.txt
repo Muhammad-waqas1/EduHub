@@ -1,0 +1,40 @@
+⏺Web system syllabus
+
+⏺Introduction to html
+html Home page
+Basic 
+Elements
+Attribute 
+Heading 
+Paragraph 
+Style 
+Formatting 
+Comments tag 
+Css page
+Internal CSS and external CSS 
+HTML links 
+HTML images 
+HTML tables 
+HTML list 
+HTML page title
+⏺CSS INTRODUCTION 
+Syntax 
+Selectors 
+How to add CSS 
+CSS comments 
+CSS errors 
+CSS background 
+CSS borders 
+CSS margins 
+CSS padding 
+CSS height , width
+Box models 
+CSS outline
+⏺Research paper: Evolution of web development:
+Q:what are the key features of static web pages?
+⏺Research paper:Responsive web designs:
+Q:what is responsive design? Why it is important?
+Q:what is break point,view port and media query?
+⏺Research paper: improving web security through ML:
+Q:What is phishing?what is data preprocessing and features extraction?
+⏺web 1st lecture
