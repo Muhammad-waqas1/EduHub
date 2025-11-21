@@ -352,37 +352,49 @@ async function loadFiles(subjectFolder, type = 'notes') {
             return;
         }
 
-        // Build table
+        
         const tableHTML = `
-            <div class="table-responsive">
-                <table class="table table-hover table-striped align-middle">
-                    <thead>
+    <div class="table-responsive">
+        <table class="table table-hover table-striped align-middle">
+            <thead>
+                <tr>
+                    <th>File Name</th>
+                    <th>Type</th>
+                    <th>Size</th>
+                    <th>Date Uploaded</th>
+                    <th>View</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${filtered.map(f => {
+                const fileUrl = `../notes/${subjectFolder}/${f.url}`;
+                    
+                // Force download ONLY for ipynb files
+                const shouldDownload = f.type.toLowerCase() === "ipynb";
+
+            return `
                         <tr>
-                            <th>File Name</th>
-                            <th>Type</th>
-                            <th>Size</th>
-                            <th>Date Uploaded</th>
-                            <th>View</th>
+                            <td>${f.name}</td>
+                            <td>${f.type.toUpperCase()}</td>
+                            <td>${f.size}</td>
+                            <td>${f.date}</td>
+                            <td>
+                                <a 
+                                    href="${fileUrl}"
+                                    class="btn btn-sm btn-primary"
+                                    ${shouldDownload ? "download" : 'target="_blank"'}
+                                >
+                                    ${shouldDownload ? "Download" : "View"}
+                                </a>
+                            </td>
                         </tr>
-                    </thead>
-                    <tbody>
-                        ${filtered.map(f => `
-                            <tr>
-                                <td>${f.name}</td>
-                                <td>${f.type.toUpperCase()}</td>
-                                <td>${f.size}</td>
-                                <td>${f.date}</td>
-                                <td>
-                                    <a href="../notes/${subjectFolder}/${f.url}" target="_blank" class="btn btn-sm btn-primary">
-                                        View
-                                    </a>
-                                </td>
-                            </tr>
-                        `).join('')}
-                    </tbody>
-                </table>
-            </div>
-        `;
+                    `;
+        }).join('')}
+            </tbody>
+        </table>
+    </div>
+`;
+
 
         listContainer.innerHTML = tableHTML;
     } catch (err) {
